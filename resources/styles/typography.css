@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply my-0 tracking-wide;
+}
+
+h1 {
+  @apply text-[48px] lg:text-[82px];
+}
+
+h2 {
+  @apply text-[48px] lg:text-[80px];
+}
+
+h3 {
+  @apply text-[22px] lg:text-[28px];
+}
+
+h4 {
+  @apply text-[22px];
+}
+
+h5 {
+  @apply text-[34px];
+}
+
+p {
+  @apply text-base;
+}
