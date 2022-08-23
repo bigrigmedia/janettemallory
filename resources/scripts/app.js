@@ -8,6 +8,7 @@ import './backgrounds';
 import './carousels';
 import './heroes';
 import './modals';
+import './transforms';
 
 /**
  * app.main

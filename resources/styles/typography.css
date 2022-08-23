@@ -4,11 +4,16 @@ h3,
 h4,
 h5,
 h6 {
-  @apply my-0 tracking-wide;
+  @apply my-0 text-black/100 tracking-wide;
+}
+
+h1,
+h2 {
+  @apply font-laluxesscript;
 }
 
 h1 {
-  @apply text-[48px] lg:text-[82px];
+  @apply mb-3 xl:mb-6 text-[48px] lg:text-[82px];
 }
 
 h2 {
@@ -28,5 +33,9 @@ h5 {
 }
 
 p {
-  @apply text-base;
+  @apply mb-6 xl:mb-12 text-base leading-loose;
+}
+
+a:not([class]) {
+  @apply text-black/100 underline uppercase tracking-wide;
 }

@@ -57,6 +57,24 @@ export const observeBackgrounds = elements => {
 }
 
 /**
+ * observeTransforms
+ *
+ * Determine if element that will transform is entering the frame
+ *
+ * @param {array} elements - The elements that will get transformed
+ */
+export const observeTransforms = elements => {
+
+  elements.forEach(element => {
+    if (element.isIntersecting) {
+      element.target.classList.add('is-visible')
+    } else {
+      element.target.classList.remove('is-visible')
+    }
+  })
+}
+
+/**
  * handleBackground
  *
  * Set an element's background

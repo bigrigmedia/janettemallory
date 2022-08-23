@@ -54,7 +54,7 @@ try {
 |
 */
 
-collect(['setup', 'filters', 'admin', 'media', 'acf', 'gravity', 'misc'])
+collect(['setup', 'filters', 'admin', 'media', 'acf', 'gravity', 'misc', 'custom-post-type'])
     ->each(function ($file) {
         if (!locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(
