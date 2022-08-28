@@ -68,7 +68,7 @@
       <div>Sign Up</div>
     </div>
     <div class='lg:col-span-12'>
-      <p class='text-sm text-black'>&copy; {{ date('Y') }}</p>
+      <p class='mb-0 text-xs text-black uppercase'>&copy; {{ date('Y') }} {{ $siteName }} &#124; <a class='no-underline' href='#'>ADA Compliance</a> &#124; <a class='no-underline' href='#'>Privacy Policy</a> &#124; Website By: <a class='no-underline' href='#'>Big Rig Media LLC</a> &copy;</p>
     </div>
   </div>
 </footer>

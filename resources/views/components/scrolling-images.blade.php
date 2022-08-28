@@ -18,7 +18,7 @@
         loading='lazy'
       />
       <img
-        class='xl:mt-[5vw] xl:transition-all xl:ease-in-out xl:will-change-transform xl:preserve-3d js-transform'
+        class='xl:!mt-[5vw] xl:transition-all xl:ease-in-out xl:will-change-transform xl:preserve-3d js-transform'
         srcset='{{ $images[2]['sizes']['w390x219'] }} 390w, {{ $images[2]['sizes']['w845x591'] }} 845w'
         sizes='(max-width: 390px) 390px, (min-width: 736px) 845px, 390px'
         src='{{ $images[2]['sizes']['w845x591'] }}'

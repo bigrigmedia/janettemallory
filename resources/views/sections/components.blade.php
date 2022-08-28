@@ -1,4 +1,4 @@
-@if( class_exists('ACF') )
+@if(class_exists('ACF'))
   @php
     $i = 1;
   @endphp
