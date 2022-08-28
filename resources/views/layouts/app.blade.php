@@ -12,3 +12,4 @@
 @endif
 
 @include('sections.footer')
+@include('sections.menus.off-canvas-nav')

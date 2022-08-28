@@ -1,0 +1,7 @@
+.menu {
+  @apply hidden flex-col justify-center inset-0 z-50 h-screen lg:py-9 bg-white opacity-0;
+}
+
+.nav-open .menu {
+  @apply fixed flex opacity-100;
+}

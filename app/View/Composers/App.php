@@ -24,6 +24,7 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
+            'getPrimaryMenuItems' => $this->getPrimaryMenuItems(),
         ];
     }
 
@@ -35,5 +36,15 @@ class App extends Composer
     public function siteName()
     {
         return get_bloginfo('name', 'display');
+    }
+
+    /**
+     * Returns the primary navigation menu.
+     *
+     * @return array
+     */
+    public function getPrimaryMenuItems()
+    {
+        return wp_get_nav_menu_items('primary');
     }
 }

@@ -4,6 +4,9 @@ module.exports = {
   content: ["./index.php", "./app/**/*.php", "./resources/**/*.{php,vue,js}"],
   theme: {
     extend: {
+      padding: {
+        edge: '240px'
+      },
       fontFamily: {
         laluxesscript: ["laluxesscript", "sans-serif"],
         acherusgrotesqueregular: ["acherus-grotesque-regular", "sans-serif"],
@@ -12,7 +15,8 @@ module.exports = {
         accent: '#eceae9'
       },
       inset: {
-        auto: 'auto'
+        auto: 'auto',
+        edge: '240px'
       }
     },
   },

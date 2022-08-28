@@ -1,0 +1,47 @@
+.btn-hamburger {
+  @apply w-10 h-12 bg-transparent border-0 appearance-none cursor-pointer;
+}
+
+.btn-hamburger-line {
+  @apply block relative w-full h-1 mx-auto bg-black rounded-full;
+
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: 0.32s;
+}
+
+.btn-hamburger-line::before,
+.btn-hamburger-line::after {
+  @apply absolute left-0 right-0 w-full h-1 bg-black rounded-full;
+
+  content: "";
+  transition-duration: 0.32s;
+}
+
+.btn-hamburger-line::before {
+  top: -12px;
+  transition: top 0.2s ease-in 0.25s, opacity 0.1s ease-in;
+}
+
+.btn-hamburger-line::after {
+  bottom: -12px;
+  transition: bottom 0.2s ease-in 0.25s,
+    transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.nav-open .btn-hamburger .btn-hamburger-line {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.nav-open .btn-hamburger .btn-hamburger-line::before {
+  @apply top-0 opacity-0;
+
+  transition: top 0.2s ease-out, opacity 0.1s ease-out 0.12s;
+}
+
+.nav-open .btn-hamburger .btn-hamburger-line::after {
+  @apply bottom-0 -rotate-90;
+
+  transition: top 0.2s ease-out, opacity 0.1s ease-out 0.12s;
+}
