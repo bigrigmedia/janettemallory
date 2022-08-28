@@ -1,6 +1,6 @@
 <section id='nav-menu' class='menu'>
   <div class='flex items-center justify-between relative px-4 lg:px-edge'>
-    <div class='fixed left-4 lg:left-0 top-[19px] lg:w-[444px] lg:pb-[14px] lg:border-b lg:border-solid lg:border-black'>
+    <div class='fixed -left-4 lg:left-0 top-[19px] w-[300px] lg:w-[444px] pl-8 lg:pl-0 pb-[14px] border-b border-solid border-black'>
       <a class='block w-[204px] h-[48px] lg:ml-auto lg:mr-0' href='/'>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 48">
           <path d="M10.888 20.634c-1.224 1.203-2.691 1.805-4.402 1.805-1.733 0-3.206-.602-4.419-1.805C.855 19.42.248 17.95.248 16.227H3.01c0 .965.335 1.784 1.007 2.456.693.672 1.516 1.008 2.47 1.008.941 0 1.754-.342 2.436-1.024.682-.683 1.023-1.496 1.023-2.44V0h2.778v16.227c0 1.714-.612 3.182-1.836 4.407ZM27.405 2.878 22.89 15.252h9.016l-4.5-12.374Zm7.018 19.317-1.527-4.163H21.898l-1.527 4.163h-2.94L25.505 0h3.818l8.073 22.195h-2.972ZM57.356 22.195 46.26 5.106v17.089H43.5V0h2.762l11.095 17.09V0h2.777v22.195h-2.777ZM70.33 22.195V0h13.856v2.764H73.093v6.667h8.317v2.78h-8.317v7.203h11.094v2.78H70.33ZM98.026 2.764v19.43h-2.778V2.765h-6.92V0h16.634v2.764h-6.936ZM120.698 2.764v19.43h-2.778V2.765H111V0h16.634v2.764h-6.936ZM132.425 22.195V0h13.856v2.764h-11.094v6.667h8.317v2.78h-8.317v7.203h11.094v2.78h-13.856Z" fill="#000"/>
@@ -24,8 +24,8 @@
       </ul>
     </nav>
   </div>
-  <div class='lg:fixed lg:right-0 lg:bottom-[36px] flex flex-col lg:flex-row items-center lg:items-start lg:w-[444px] lg:pt-[14px] lg:border-t lg:border-solid lg:border-black lg:space-x-6'>
-    <a class='text-black no-underline uppercase hover:text-accent' href='mailto:jm@janettemallory.com'>jm@janettemallory.com</a>
-    <a class='text-black no-underline uppercase hover:text-accent' href='tel:4245816289'>(424) 581-6289</a>
+  <div class='fixed right-0 bottom-[36px] flex flex-col lg:flex-row items-start w-[300px] lg:w-[444px] pt-[14px] border-t border-solid border-black lg:space-x-6'>
+    <a class='text-black no-underline uppercase transition-all duration-500 hover:text-accent' href='mailto:jm@janettemallory.com'>jm@janettemallory.com</a>
+    <a class='text-black no-underline uppercase transition-all duration-500 hover:text-accent' href='tel:4245816289'>(424) 581-6289</a>
   </div>
 </section>

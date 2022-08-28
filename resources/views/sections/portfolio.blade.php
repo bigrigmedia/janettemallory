@@ -1,4 +1,4 @@
-<section class='xl:pt-[64px] px-4 xl:px-0'>
+<section class='xl:py-[64px] px-4 xl:px-0'>
   <div class='flex flex-col xl:space-y-24'>
     @php $i = 0; @endphp
     @foreach($getPortfoliio as $portfolio)
@@ -16,25 +16,27 @@
           <h1>{{ $portfolio->post_title }}</h1>
         </div>
         <div class='portfolio-image'>
-          @if($i === 0)
-            <img
-              class='js-transform'
-              srcset='{{ $horizontal_moilbe }} 390w, {{ $horizontal_desktop }} 1089w'
-              sizes='(max-width: 390px) 390px, (min-width: 736px) 1089px, 390px'
-              src='{{ $horizontal_desktop }}'
-              alt='{{ $portfolio->post_title }}'
-              loading='lazy'
-            />
-          @else
-            <img
-              class='js-transform'
-              srcset='{{ $vertical_mobile }} 390w, {{ $vertical_desktop }} 589w'
-              sizes='(max-width: 390px) 390px, (min-width: 736px) 589px, 390px'
-              src='{{ $vertical_desktop }}'
-              alt='{{ $portfolio->post_title }}'
-              loading='lazy'
-            />
-          @endif
+          <a href={{ get_permalink($portfolio->ID) }}>
+            @if($i === 0)
+              <img
+                class='js-transform'
+                srcset='{{ $horizontal_moilbe }} 390w, {{ $horizontal_desktop }} 1089w'
+                sizes='(max-width: 390px) 390px, (min-width: 736px) 1089px, 390px'
+                src='{{ $horizontal_desktop }}'
+                alt='{{ $portfolio->post_title }}'
+                loading='lazy'
+              />
+            @else
+              <img
+                class='js-transform'
+                srcset='{{ $vertical_mobile }} 390w, {{ $vertical_desktop }} 589w'
+                sizes='(max-width: 390px) 390px, (min-width: 736px) 589px, 390px'
+                src='{{ $vertical_desktop }}'
+                alt='{{ $portfolio->post_title }}'
+                loading='lazy'
+              />
+            @endif
+          </a>
         </div>
       </div>
       @php $i++ @endphp

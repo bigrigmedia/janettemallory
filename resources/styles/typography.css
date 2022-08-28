@@ -12,6 +12,12 @@ h2 {
   @apply font-laluxesscript;
 }
 
+h3,
+h4,
+h5 {
+  @apply uppercase tracking-widest;
+}
+
 h1 {
   @apply mb-3 xl:mb-6 text-[48px] lg:text-[82px];
 }
@@ -29,7 +35,7 @@ h4 {
 }
 
 h5 {
-  @apply text-[34px];
+  @apply text-[18px];
 }
 
 p {

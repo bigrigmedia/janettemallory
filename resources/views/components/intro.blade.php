@@ -1,5 +1,5 @@
 @if($image && $content)
-  <section class='pt-[56px] pb-[71px] xl:pt-[123px] xl:pb-[93px]'>
+  <section class='pt-[56px] pb-4 xl:pt-[123px] xl:pb-[93px]'>
     <div class='xl:flex xl:items-center xl:justify-between xl:flex-grow px-4 xl:px-0'>
       <div class='relative xl:pl-[25%] xl:pr-[5%] xl:before:content-[""] xl:before:absolute xl:before:top-[19%] xl:before:-left-0 xl:before:w-[38%] xl:before:h-px xl:before:bg-black'>
         {!! $content !!}

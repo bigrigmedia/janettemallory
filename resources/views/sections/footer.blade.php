@@ -1,6 +1,6 @@
-<footer class='py-[49px]'>
+<footer class='py-[49px] space-y-8 lg:space-y-0'>
   <div class='flex flex-col px-4 lg:px-edge'>
-    <div class='relative lg:w-[444px] lg:pb-[14px] lg:before:content-[""] lg:before:block lg:before:absolute lg:before:bottom-0 lg:before:-left-edge lg:before:w-full lg:before:h-px lg:before:bg-black'>
+    <div class='relative w-[300px] lg:w-[444px] pb-[14px] before:content-[""] before:block before:absolute before:bottom-0 before:-left-4 lg:before:-left-edge before:w-full before:h-px before:bg-black'>
       <a class='inline-flex w-[204px] h-[48px]' href='/'>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 48">
           <path d="M10.888 20.634c-1.224 1.203-2.691 1.805-4.402 1.805-1.733 0-3.206-.602-4.419-1.805C.855 19.42.248 17.95.248 16.227H3.01c0 .965.335 1.784 1.007 2.456.693.672 1.516 1.008 2.47 1.008.941 0 1.754-.342 2.436-1.024.682-.683 1.023-1.496 1.023-2.44V0h2.778v16.227c0 1.714-.612 3.182-1.836 4.407ZM27.405 2.878 22.89 15.252h9.016l-4.5-12.374Zm7.018 19.317-1.527-4.163H21.898l-1.527 4.163h-2.94L25.505 0h3.818l8.073 22.195h-2.972ZM57.356 22.195 46.26 5.106v17.089H43.5V0h2.762l11.095 17.09V0h2.777v22.195h-2.777ZM70.33 22.195V0h13.856v2.764H73.093v6.667h8.317v2.78h-8.317v7.203h11.094v2.78H70.33ZM98.026 2.764v19.43h-2.778V2.765h-6.92V0h16.634v2.764h-6.936ZM120.698 2.764v19.43h-2.778V2.765H111V0h16.634v2.764h-6.936ZM132.425 22.195V0h13.856v2.764h-11.094v6.667h8.317v2.78h-8.317v7.203h11.094v2.78h-13.856Z" fill="#000"/>
@@ -10,7 +10,7 @@
       </a>
     </div>
   </div>
-  <div class='grid lg:grid-cols-12 lg:gap-8 px-4 lg:px-edge lg:pt-[56px]'>
+  <div class='grid lg:grid-cols-12 lg:gap-8 px-4 lg:px-edge lg:pt-[56px] space-y-8 lg:space-y-0'>
     <div class='lg:col-span-3'>
       <nav>
         <ul class='list-none space-y-2'>
@@ -27,7 +27,7 @@
         <span class='block'>1325 Montana Ave.</span>
         <span class='block'>Santa Monica, CA 90403</span>
       </address>
-      <div class='space-y-2'>
+      <div class='flex flex-col space-y-2'>
         <a class='inline-block text-black no-underline hover:text-accent' href='tel:4245816289'>(424) 581-6289</a>
         <a class='inline-block text-black no-underline hover:text-accent' href='mailto:jm@janettemallory.com'>jm@janettemallory.com</a>
       </div>

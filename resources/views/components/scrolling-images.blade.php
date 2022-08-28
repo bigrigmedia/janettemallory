@@ -1,6 +1,6 @@
 @if($images && $content)
   <section class='pb-[53px] xl:pb-[171px]'>
-    <div class='xl:relative xl:pb-[5%]'>
+    <div class='xl:relative mb-8 lg:mb-0 px-4 lg:px-0 xl:pb-[5%] space-y-4 lg:space-y-0'>
       <img
         class='xl:transition-all xl:ease-in-out xl:will-change-transform xl:preserve-3d js-transform'
         srcset='{{ $images[0]['sizes']['w390x219'] }} 390w, {{ $images[0]['sizes']['w1089x726'] }} 1089w'
