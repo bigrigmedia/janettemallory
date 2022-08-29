@@ -16,7 +16,7 @@
         @include('partials.page-header')
       </div>
       <div class='lg:grid lg:grid-cols-12 lg:gap-8'>
-        <div class='lg:col-span-4 space-y-8'>
+        <div class='lg:col-span-4 lg:self-start lg:sticky lg:top-0 space-y-8'>
           @if($content)
             <div class='space-y-3'>
               {!! $content !!}
@@ -102,7 +102,7 @@
   <section class='py-[65px] xl:py-[171px] bg-accent'>
     <div class='flex flex-col items-center justify-center px-4 lg:px-edge'>
       <h2>Ready to get Started?</h2>
-      <a href={{ get_permalink(20) }}>Get In Touch</a>
+      <a class='text-black uppercase tracking-wide underline underline-offset-2 transition-all hover:text-black' href={{ get_permalink(20) }}>Get In Touch</a>
     </div>
   </section>
 @endsection

@@ -16,7 +16,7 @@
         @include('partials.page-header')
       </div>
       <div class='lg:grid lg:grid-cols-12 lg:gap-8'>
-        <div class='lg:col-span-4 space-y-8'>
+        <div class='lg:col-span-4 lg:self-start lg:sticky lg:top-0 space-y-8'>
           @if($location)
             <div class='space-y-3'>
               <h5>Location:</h5>
