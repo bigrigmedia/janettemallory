@@ -1,5 +1,5 @@
-<section class='xl:py-[64px] px-4 xl:px-0'>
-  <div class='flex flex-col xl:space-y-24'>
+<section class='lg:py-[32px] xl:py-[64px] px-4 xl:px-0'>
+  <div class='flex flex-col lg:space-y-12 xl:space-y-24'>
     @php $i = 0; @endphp
     @foreach($getPortfoliio as $portfolio)
       @php
@@ -11,11 +11,12 @@
           $vertical_desktop = wp_get_attachment_image_src( get_post_thumbnail_id($portfolio->ID), 'w744x912' )[0] ?? null;
         }
       @endphp
-      <div class='portfolio portfolio--{{ $i }}'>
-        <div class='portfolio-detail'>
-          <h1>{{ $portfolio->post_title }}</h1>
+      <div class='row row--{{ $i }}'>
+        <div class='row-detail'>
+          <h2 class='mb-6'>{{ $portfolio->post_title }}</h2>
+          <a href={{ get_permalink($portfolio->ID) }}>View Project</a>
         </div>
-        <div class='portfolio-image'>
+        <div class='row-image'>
           <a href={{ get_permalink($portfolio->ID) }}>
             @if($i === 0)
               <img

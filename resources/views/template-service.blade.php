@@ -1,37 +1,24 @@
+{{--
+  Template Name: Service Template
+--}}
+
 @extends('layouts.app')
 
 @section('content')
   @php
     global $post;
 
-    $locations = get_the_terms($post, 'location');
-    $location = $locations[0]->name ?? null;
-    $types = get_the_terms($post, 'type');
-    $type = $types[0]->name ?? null;
     $content = apply_filters('the_content', $post->post_content);
   @endphp
   <section class='py-[49px] lg:py-[98px]'>
-    <div class='px-4 xl:px-edge space-y-20 lg:space-y-44'>
+    <div class='px-4 xl:px-edge space-y-20 xl:space-y-44'>
       <div class='xl:relative xl:before:content-[""] xl:before:block xl:before:absolute xl:before:top-[50%] xl:before:-right-edge xl:before:w-10/12 xl:before:h-px xl:before:bg-black'>
         @include('partials.page-header')
       </div>
       <div class='lg:grid lg:grid-cols-12 lg:gap-8'>
         <div class='lg:col-span-4 space-y-8'>
-          @if($location)
-            <div class='space-y-3'>
-              <h5>Location:</h5>
-              <p>{{ $location }}</p>
-            </div>
-          @endif
-          @if($type)
-            <div class='space-y-3'>
-              <h5>Project Type:</h5>
-              <p>{{ $type }}</p>
-            </div>
-          @endif
           @if($content)
             <div class='space-y-3'>
-              <h5>Design Scope:</h5>
               {!! $content !!}
             </div>
           @endif
@@ -110,6 +97,12 @@
           @endif
         </div>
       </div>
+    </div>
+  </section>
+  <section class='py-[65px] xl:py-[171px] bg-accent'>
+    <div class='flex flex-col items-center justify-center px-4 lg:px-edge'>
+      <h2>Ready to get Started?</h2>
+      <a href={{ get_permalink(20) }}>Get In Touch</a>
     </div>
   </section>
 @endsection

@@ -1,5 +1,5 @@
 <section class='py-[65px] xl:py-[118px] bg-accent'>
-  <div class='grid lg:grid-cols-2 gap-8 px-4 lg:px-edge'>
+  <div class='grid lg:grid-cols-2 gap-8 px-4 xl:px-edge'>
     <div class='text-center space-y-6'>
       <img
         srcset='{{ $images[0]['sizes']['w390x526'] }} 390w, {{ $images[0]['sizes']['w701x526'] }} 701w'

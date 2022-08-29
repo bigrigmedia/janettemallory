@@ -1,23 +1,24 @@
-div.portfolio {
-  @apply xl:flex xl:items-center xl:justify-between xl:flex-grow xl:odd:flex-row-reverse w-full;
+.row {
+  @apply lg:flex lg:items-center lg:justify-between lg:flex-grow lg:odd:flex-row-reverse w-full;
 }
 
-.portfolio-detail {
-  @apply relative xl:pl-[25%] xl:pr-[5%] xl:before:content-[""] xl:before:absolute xl:before:top-[19%] xl:before:-left-0 xl:before:w-[38%] xl:before:h-px xl:before:bg-black;
+.row-detail {
+  @apply relative lg:pl-[12%] xl:pl-[25%] lg:pr-[3%] xl:pr-[5%] xl:before:content-[""] xl:before:absolute xl:before:top-[19%] xl:before:-left-0 xl:before:w-[38%] xl:before:h-px xl:before:bg-black;
 }
 
-.portfolio-image {
-  @apply xl:w-[70%];
+.row-image {
+  @apply lg:w-[60%] xl:w-[70%];
 }
 
-.portfolio img {
+.row img {
   @apply xl:mr-auto xl:ml-0 xl:transition-all xl:ease-in-out xl:will-change-transform xl:preserve-3d;
 }
 
-.portfolio:nth-child(odd) .portfolio-detail {
-  @apply xl:pl-[5%] xl:pr-[25%] xl:odd:before:-right-0 xl:odd:before:left-auto;
+.row:nth-child(odd) .row-detail {
+  @apply lg:pl-[3%] xl:pl-[5%] lg:pr-[12%] xl:pr-[25%] xl:odd:before:-right-0 xl:odd:before:left-auto;
 }
 
-.portfolio--2 img {
+.row--0 img,
+.row--2 img {
   @apply xl:mr-0 xl:ml-auto;
 }

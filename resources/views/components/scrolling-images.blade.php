@@ -1,6 +1,6 @@
 @if($images && $content)
-  <section class='pb-[53px] xl:pb-[171px]'>
-    <div class='xl:relative mb-8 lg:mb-0 px-4 lg:px-0 xl:pb-[5%] space-y-4 lg:space-y-0'>
+  <section class='pb-[53px] lg:pb-[85px] xl:pb-[171px]'>
+    <div class='lg:relative mb-8 lg:mb-0 px-4 lg:px-0 lg:pb-[3%] xl:pb-[5%] space-y-4 lg:space-y-0'>
       <img
         class='xl:transition-all xl:ease-in-out xl:will-change-transform xl:preserve-3d js-transform'
         srcset='{{ $images[0]['sizes']['w390x219'] }} 390w, {{ $images[0]['sizes']['w1089x726'] }} 1089w'
@@ -26,11 +26,11 @@
         loading='lazy'
       />
     </div>
-    <div class='xl:flex xl:items-center xl:justify-between px-4 xl:px-0'>
-      <div class='xl:relative xl:pl-[25%] xl:pr-[5%] xl:before:content-[""] xl:before:absolute xl:before:top-[11%] xl:before:-left-0 xl:before:w-[38%] xl:before:h-px xl:before:bg-black'>
+    <div class='lg:flex lg:items-center lg:justify-between px-4 xl:px-0'>
+      <div class='xl:relative lg:max-w-[539px] xl:max-w-[1078px] lg:pl-[12%] xl:pl-[25%] lg:pr-[3%] xl:pr-[5%] xl:before:content-[""] xl:before:absolute xl:before:top-[11%] xl:before:-left-0 xl:before:w-[38%] xl:before:h-px xl:before:bg-black'>
         {!! $content !!}
       </div>
-      <div class='xl:w-[70%] xl:pr-[5%]'>
+      <div class='lg:w-[70%] xl:w-[70%] lg:pr-[3%] xl:pr-[5%]'>
         <img
           class='xl:transition-all xl:ease-in-out xl:will-change-transform js-transform'
           srcset='{{ $images[3]['sizes']['w390x403'] }} 390w, {{ $images[3]['sizes']['w744x912'] }} 744w'

@@ -26,6 +26,8 @@
         $scrolling_content = get_sub_field('scrolling_content') ?? null;
 
         $video_testimonial_content = get_sub_field('video_testimonial_content') ?? null;
+
+        $reverse_rows = get_sub_field('reverse_rows') ?? null;
       @endphp
       @switch($component)
         @case('intro')
@@ -59,6 +61,9 @@
               @include('components.two-columns', ['images' => $images, 'content' => $content])
             @endwhile
           @endif
+        @break
+        @case('reverse-rows')
+          @include('components.reverse-rows', ['pages' => $reverse_rows])
         @break
       @endswitch
       @php $i++ @endphp

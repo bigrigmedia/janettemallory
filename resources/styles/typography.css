@@ -43,5 +43,5 @@ p {
 }
 
 a:not([class]) {
-  @apply text-black/100 underline uppercase tracking-wide;
+  @apply text-black/100 uppercase tracking-wide underline underline-offset-2 transition-all hover:text-accent;
 }

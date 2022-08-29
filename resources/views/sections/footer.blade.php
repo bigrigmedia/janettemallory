@@ -1,5 +1,5 @@
 <footer class='py-[49px] space-y-8 lg:space-y-0'>
-  <div class='flex flex-col px-4 lg:px-edge'>
+  <div class='flex flex-col px-4 xl:px-edge'>
     <div class='relative w-[300px] lg:w-[444px] pb-[14px] before:content-[""] before:block before:absolute before:bottom-0 before:-left-4 lg:before:-left-edge before:w-full before:h-px before:bg-black'>
       <a class='inline-flex w-[204px] h-[48px]' href='/'>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 48">
@@ -10,7 +10,7 @@
       </a>
     </div>
   </div>
-  <div class='grid lg:grid-cols-12 lg:gap-8 px-4 lg:px-edge lg:pt-[56px] space-y-8 lg:space-y-0'>
+  <div class='grid lg:grid-cols-12 lg:gap-8 px-4 xl:px-edge lg:pt-[56px] space-y-8 lg:space-y-0'>
     <div class='lg:col-span-3'>
       <nav>
         <ul class='list-none space-y-2'>
