@@ -37,6 +37,29 @@
         @case('video-testimonial')
           @include('components.video-testimonial', ['content' => $video_testimonial_content])
         @break
+        @case('two-columns')
+          @if(have_rows('two_columns'))
+            @while(have_rows('two_columns')) @php the_row() @endphp
+              @php
+                // Component Data
+                $column_1_image = get_sub_field('column_1_image') ?? null;
+                $column_1_content = get_sub_field('column_1_content') ?? null;
+                $column_2_image = get_sub_field('column_2_image') ?? null;
+                $column_2_content = get_sub_field('column_2_content') ?? null;
+
+                $images = [
+                  $column_1_image,
+                  $column_2_image
+                ];
+                $content = [
+                  $column_1_content,
+                  $column_2_content
+                ];
+              @endphp
+              @include('components.two-columns', ['images' => $images, 'content' => $content])
+            @endwhile
+          @endif
+        @break
       @endswitch
       @php $i++ @endphp
     @endwhile

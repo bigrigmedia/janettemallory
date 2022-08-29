@@ -26,6 +26,8 @@ $custom_sizes = [
     'w845x591'  => [845, 591, true],
     'w744x912'  => [744, 912, true],
     'w390x403'  => [390, 403, true],
+    'w701x526'  => [701, 526, true],
+    'w390x526'  => [390, 526, true],
 ];
 
 if (!empty($custom_sizes)) {

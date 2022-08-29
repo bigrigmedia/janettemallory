@@ -109,6 +109,14 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
+
+    /**
+     * Remove SVG
+     *
+     * @link https://github.com/WordPress/gutenberg/issues/36834#issuecomment-1048923664
+     */
+    remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+    remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
 }, 20);
 
 /**
