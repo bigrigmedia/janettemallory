@@ -9,6 +9,9 @@
     $types = get_the_terms($post, 'type');
     $type = $types[0]->name ?? null;
     $content = apply_filters('the_content', $post->post_content);
+
+    $next_post = get_next_post();
+    $prev_post = get_previous_post();
   @endphp
   <section class='py-[49px] lg:py-[98px]'>
     <div class='px-4 xl:px-edge space-y-20 lg:space-y-44'>
@@ -110,6 +113,20 @@
           @endif
         </div>
       </div>
+      <nav>
+        <ul class='flex items-center justify-between'>
+          @if($prev_post)
+            <li>
+              <a href={{ get_permalink($prev_post->ID) }}>Previous Project</a>
+            </li>
+          @endif
+          @if($next_post)
+            <li>
+              <a href={{ get_permalink($next_post->ID) }}>Next Project</a>
+            </li>
+          @endif
+        </ul>
+      </nav>
     </div>
   </section>
 @endsection

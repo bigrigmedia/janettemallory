@@ -1,5 +1,11 @@
 .row {
-  @apply lg:flex lg:items-center lg:justify-between lg:flex-grow lg:odd:flex-row-reverse w-full;
+  @apply flex lg:items-center lg:justify-between lg:flex-grow lg:odd:flex-row-reverse w-full;
+}
+
+@media (max-width: 1023px) {
+  .row {
+    @apply flex-col-reverse space-y-reverse space-y-6;
+  }
 }
 
 .row-detail {

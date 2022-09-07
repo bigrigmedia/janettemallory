@@ -25,7 +25,7 @@
         ];
         $scrolling_content = get_sub_field('scrolling_content') ?? null;
 
-        $video_testimonial_content = get_sub_field('video_testimonial_content') ?? null;
+        $video_testimonial_content = get_sub_field('video_testimonial') ?? null;
 
         $reverse_rows = get_sub_field('reverse_rows') ?? null;
       @endphp

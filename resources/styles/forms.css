@@ -1,0 +1,9 @@
+.submit {
+  @apply absolute top-[13px] right-[12px] w-[14px] h-[25px] font-bold bg-right bg-no-repeat bg-arrow cursor-pointer -indent-[9999px];
+}
+
+@layer components {
+  .bg-arrow {
+    background-image: url("../images/arrow.svg");
+  }
+}

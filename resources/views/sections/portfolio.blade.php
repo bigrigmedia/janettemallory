@@ -1,5 +1,5 @@
-<section class='lg:py-[32px] xl:py-[64px] px-4 xl:px-0'>
-  <div class='flex flex-col lg:space-y-12 xl:space-y-24'>
+<section class='py-[32px] xl:py-[64px] px-4 xl:px-0'>
+  <div class='flex flex-col space-y-12 xl:space-y-24'>
     @php $i = 0; @endphp
     @foreach($getPortfoliio as $portfolio)
       @php

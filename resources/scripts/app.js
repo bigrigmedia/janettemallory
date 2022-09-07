@@ -10,6 +10,7 @@ import './heroes';
 import './modals';
 import './nav';
 import './transforms';
+import './videos';
 
 /**
  * app.main

@@ -4,15 +4,24 @@
   $desktop = get_field('hero_image')['sizes']['w1920x860'] ?? null;
   $video = get_field('hero_video') ?? null;
   $content = get_field('hero_content') ?? null;
+  $images = get_field('hero_carousel') ?? null;
 @endphp
-@if($mobile && $desktop)
-  <section class='w-full h-screen max-h-[715px] xl:max-h-[860px] js-hero' data-mobile='{{ $mobile }}' data-desktop='{{ $desktop }}'>
-    @if($content)
-      <div class='hero-content'>
-        {!! $content !!}
-      </div>
-    @endif
-    @if($video)
-    @endif
-  </section>
-@endif
+
+@switch($type)
+  @case('image')
+    @include('partials.hero-image', [
+      'mobile' => $mobile,
+      'desktop' => $desktop
+    ])
+  @break
+  @case('carousel')
+    @include('partials.hero-carousel', [
+      'images' => $images,
+    ])
+  @break
+  @case('video')
+    @include('partials.hero-video', [
+      'video' => $video,
+    ])
+  @break
+@endswitch

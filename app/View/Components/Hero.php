@@ -7,6 +7,13 @@ use Illuminate\View\Component;
 class Hero extends Component
 {
     /**
+     * The hero type.
+     *
+     * @var string
+     */
+    public $type;
+
+    /**
      * The hero image.
      *
      * @var string
@@ -32,8 +39,9 @@ class Hero extends Component
      *
      * @return void
      */
-    public function __construct($image, $video, $content)
+    public function __construct($type, $image, $video, $content)
     {
+        $this->type = $type;
         $this->image = $image;
         $this->video = $video;
         $this->content = $content;
